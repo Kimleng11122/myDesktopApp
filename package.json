@@ -1,0 +1,50 @@
+{
+  "name": "membership-management-system",
+  "version": "1.0.0",
+  "description": "Desktop membership management system with Electron, SQLite, and Excel import/export",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "concurrently \"npm run build:watch\" \"wait-on dist/index.html && electron .\"",
+    "build": "webpack --mode production",
+    "build:watch": "webpack --mode development --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kimleng",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "master"
+  },
+  "keywords": [
+    "membership",
+    "management",
+    "electron",
+    "sqlite",
+    "excel"
+  ],
+  "dependencies": {
+    "better-sqlite3": "^9.2.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "concurrently": "^8.2.2",
+    "css-loader": "^6.8.1",
+    "electron": "^28.1.0",
+    "electron-rebuild": "^3.2.9",
+    "eslint": "^8.55.0",
+    "html-webpack-plugin": "^5.5.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "wait-on": "^7.2.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

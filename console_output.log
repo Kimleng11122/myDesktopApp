@@ -1,0 +1,51 @@
+
+> membership-management-system@1.0.0 start
+> electron .
+
+Initializing database...
+Database path: /Users/khemara/Library/Application Support/membership-management-system/members.db
+Database initialized successfully
+Database initialized, creating window...
+IPC: Getting members...
+IPC: Members result: [
+  {
+    id: 1,
+    name: 'Kimleng CHHE',
+    email: 'chhekimleng@gmail.com',
+    phone: '0412868492',
+    address: 'springvale south',
+    membership_type: 'standard',
+    status: 'active',
+    join_date: '2025-09-22 04:22:42',
+    notes: null,
+    last_due_date: '2026-09-22T04:22:42.270Z',
+    payment_count: 1
+  }
+]
+IPC: Getting dashboard stats...
+Getting dashboard stats...
+Total members query result: { count: 1 }
+Error in getDashboardStats: SqliteError: no such column: active
+    at Database.prepare (/Users/khemara/MyProjects/myAwesomeApp/node_modules/better-sqlite3/lib/methods/wrappers.js:5:21)
+    at DatabaseService.getDashboardStats (/Users/khemara/MyProjects/myAwesomeApp/src/database/database.js:174:37)
+    at /Users/khemara/MyProjects/myAwesomeApp/src/main.js:97:29
+    at WebContents.<anonymous> (node:electron/js2c/browser_init:2:77979)
+    at WebContents.emit (node:events:517:28) {
+  code: 'SQLITE_ERROR'
+}
+IPC: Error getting dashboard stats: SqliteError: no such column: active
+    at Database.prepare (/Users/khemara/MyProjects/myAwesomeApp/node_modules/better-sqlite3/lib/methods/wrappers.js:5:21)
+    at DatabaseService.getDashboardStats (/Users/khemara/MyProjects/myAwesomeApp/src/database/database.js:174:37)
+    at /Users/khemara/MyProjects/myAwesomeApp/src/main.js:97:29
+    at WebContents.<anonymous> (node:electron/js2c/browser_init:2:77979)
+    at WebContents.emit (node:events:517:28) {
+  code: 'SQLITE_ERROR'
+}
+Error occurred in handler for 'get-dashboard-stats': SqliteError: no such column: active
+    at Database.prepare (/Users/khemara/MyProjects/myAwesomeApp/node_modules/better-sqlite3/lib/methods/wrappers.js:5:21)
+    at DatabaseService.getDashboardStats (/Users/khemara/MyProjects/myAwesomeApp/src/database/database.js:174:37)
+    at /Users/khemara/MyProjects/myAwesomeApp/src/main.js:97:29
+    at WebContents.<anonymous> (node:electron/js2c/browser_init:2:77979)
+    at WebContents.emit (node:events:517:28) {
+  code: 'SQLITE_ERROR'
+}
